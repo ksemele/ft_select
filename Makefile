@@ -36,8 +36,8 @@ all: $(NAME)
 
 $(NAME): $(LIBFT) $(OBJ_DIR) $(OBJ)
 	@$(CC) $(FLAGS) $(LIBRARIES) $(INCLUDES) $(OBJ) -o $(NAME)
-	@echo "\n$(NAME): $(GRN)$(NAME) object files were created$(RESET)"
-	@echo "$(NAME): $(GRN)$(NAME) was created$(RESET)"
+	@echo "\n$(NAME): $(GRN)$(NAME) object files were created$(END)"
+	@echo "$(NAME): $(GRN)$(NAME) was created$(END)"
 
 $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
